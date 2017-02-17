@@ -1,0 +1,6 @@
+# Clear out Composer cache and re-install
+function resetcomposer() {
+    rm -r vendor;
+    rm composer.lock;
+    composer install;
+}
