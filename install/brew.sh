@@ -10,7 +10,6 @@ brew upgrade
 # Install packages
 
 apps=(
-  atom
   bash-completion2
   bats
   battery
