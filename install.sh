@@ -14,6 +14,7 @@ EXTRA_DIR="$HOME/.extra"
 
 ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/runcom/.hyper.js" ~
+[ -d "$DOTFILES_DIR/runcom/.atom" ] && ln -sfv "$DOTFILES_DIR/runcom/.atom" ~
 
 # Package managers & packages
 
