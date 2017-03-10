@@ -24,6 +24,7 @@ apps=(
   grep --with-default-names
   hub
   httpie
+  hyper
   imagemagick
   jq
   mackup
