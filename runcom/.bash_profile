@@ -17,6 +17,15 @@ else
   return # `exit 1` would quit the shell itself
 fi
 
+
+# Powerline JS
+
+function _update_ps1() {
+   export PS1="$($DOTFILES_DIR/external/powerline-js/powerline.js $? --shell bash --depth 2)"
+}
+export PROMPT_COMMAND="_update_ps1"
+
+
 # Finally we can source the dotfiles (order matters)
 
 for DOTFILE in "$DOTFILES_DIR"/{system/.function,system/.alias,sm/.function,sm/.alias}; do
