@@ -21,6 +21,7 @@ apps=(
   git
   git-extras
   gnu-sed --with-default-names
+  gnu-tar
   grep --with-default-names
   hub
   httpie
