@@ -17,9 +17,14 @@ apps=(
   dockutil
   ffmpeg
   fasd
+  findutils
+  gawk
   gifsicle
   git
   git-extras
+  gnutls
+  gnu-indent
+  gnu-getopt
   gnu-sed --with-default-names
   gnu-tar
   grep --with-default-names
