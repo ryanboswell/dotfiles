@@ -4,6 +4,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew tap homebrew/versions
 brew tap homebrew/dupes
 brew tap Goles/battery
+brew tap caskroom/cask
 brew update
 brew upgrade
 
@@ -46,3 +47,25 @@ apps=(
 )
 
 brew install "${apps[@]}"
+
+
+# Install macOS applications
+
+cask_apps=(
+  atom
+  docker
+  docker-toolbox
+  firefox
+  google-chrome
+  istat-menus
+  iterm2
+  keepingyouawake
+  postman
+  slack
+  sourcetree
+  spotify
+  transmit
+  vlc
+)
+
+brew cask install "${cask_apps[@]}"
