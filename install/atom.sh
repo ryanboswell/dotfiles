@@ -1,5 +1,5 @@
 ATOM_DIR="$HOME/.atom"
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Atom application
 brew install Caskroom/cask/atom

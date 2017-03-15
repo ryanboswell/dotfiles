@@ -1,4 +1,4 @@
-DOTFILES_DIR="$HOME/dotfiles"
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Checkout and setup Powerline JS, or update if it already exists
 if [[ -d "$DOTFILES_DIR/external/powerline-js" ]]; then
