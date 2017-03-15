@@ -17,6 +17,7 @@ ln -sfv "$DOTFILES_DIR/runcom/.hyper.js" ~
 
 # Package managers & packages
 
+. "$DOTFILES_DIR/install/fonts.sh"
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/npm.sh"
 . "$DOTFILES_DIR/install/atom.sh"
