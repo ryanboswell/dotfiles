@@ -7,6 +7,7 @@ nvm install 6
 packages=(
   diff-so-fancy
   get-port-cli
+  grunt-cli
   nodemon
   release-it
   spot
