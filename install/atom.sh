@@ -22,15 +22,28 @@ fi
 # Install with apm
 
 packages=(
+  atom-autocomplete-php
+  atom-beautify
+  atom-wordpress
+  autoclose-html
   autocomplete-emojis
   autocomplete-wordpress-hooks
   editorconfig
   emmet
   gist-it
   greti-syntax
+  highlight-line
+  linter-jshint
+  linter-jsonlint
+  linter-markdown
+  linter-mixed-indent
+  linter-phpcs
+  linter-sass-lint
   pretty-json
   seti-syntax
   seti-ui
+  todo-show
+  wordpress-api
 )
 
 apm install "${packages[@]}"
