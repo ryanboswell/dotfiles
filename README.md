@@ -12,4 +12,4 @@ Check out more on [dotfiles](https://dotfiles.github.io/).
 ## TODO
 -----
 -   Add more dev tool installation routines
--   Cleaner system checking to identify and source system-specific bash profile files (ie. the `sm` folder that isn't included in revision control here)
+-   Cleaner system checking to identify and source system-specific bash profile files (ie. the `sm` folder that isn't included in this repo)
