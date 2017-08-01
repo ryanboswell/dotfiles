@@ -14,6 +14,7 @@ apps=(
   bash-completion2
   bats
   battery
+  composer
   coreutils
   dockutil
   ffmpeg
