@@ -5,6 +5,18 @@ function resetcomposer() {
   composer install;
 }
 
+# Open PHP Unit code coverage report
+function coverage() {
+  open coverage/index.html
+}
+
+# Reset any uncommitted changes and pull latest origin
+function resetproject() {
+  git clean -fdx
+  git reset --hard
+  git pull origin
+}
+
 
 # Clear out all local docker containers and caches
 dockerclean() {

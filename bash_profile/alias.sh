@@ -24,6 +24,7 @@ alias nup="npm update"
 
 ## Local dev helpers
 alias godev='cd ~/Documents/dev'
+alias sshkey='ssh-add -K'
 
 
 ## Network
@@ -31,7 +32,6 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 
 # Application shortcuts
-alias atom='open -a /Applications/Atom.app'
 alias sourcetree='open -a /Applications/SourceTree.app'
 
 
