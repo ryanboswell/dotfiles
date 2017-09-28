@@ -5,10 +5,11 @@
 # ------------------------------------------------------------------------------
 
 function _source_bash_profile_components() {
+  local DIR=${1}
   CWD="$( pwd )"
-  cd "$DOTFILES_DIR/bash_profile"
-  for file in .* *; do
-    [ -f "$file" ] && . "$file"
+  cd "$DOTFILES_DIR/$DIR"
+  for file in .* *.sh; do
+    [ -f "$file" ] && . "$DOTFILES_DIR/$DIR/$file"
   done
   cd $CWD
 }
