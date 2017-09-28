@@ -48,7 +48,7 @@ function _source_bash_profile() {
 
   grep -qi "dotfiles/.bash_profile" ~/.bash_profile
   if [ $? -gt 0 ]; then
-    echo "source [$DOTFILES_DIR/.bash_profile]" >> ~/.bash_profile
+    echo "source $DOTFILES_DIR/.bash_profile" >> ~/.bash_profile
     print_success_message "[./bash_profile] sourced"
   else
     print_notice_message "[./bash_profile] already sourced"
