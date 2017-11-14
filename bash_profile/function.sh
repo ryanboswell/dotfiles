@@ -39,3 +39,14 @@ dockerrmi() {
   echo "Removing all images ..."
   docker rmi -f $(docker images -a -q)
 }
+
+# Remove host from known_hosts file
+forget_host() {
+  local HOST=${1-}
+  if [[ ! -z "${HOST}" ]]; then
+    sed -i "/${HOST}/d" ~/.ssh/known_hosts
+    echo "Removed ${HOST} from known_hosts file"
+  else
+    echo "Usage: forget_host HOSTNAME"
+  fi
+}
