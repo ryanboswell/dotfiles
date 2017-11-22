@@ -10,11 +10,21 @@ function coverage() {
   open coverage/index.html
 }
 
-# Reset any uncommitted changes and pull latest origin
+# Reset any uncommitted changes and pull latest origin (branch positional argument optional)
 function resetproject() {
+  local BRANCH=${1-}
+
+  # Reset working copy to a clean state to prevent conflicts
   git clean -fdx
   git reset --hard
-  git pull origin
+
+  # If a branch was specified, fetch remotes and check it out
+  if [[ ! -z "${BRANCH}" ]]; then
+    git fetch --all -p
+    git checkout ${BRANCH}
+  fi
+
+  git pull origin ${BRANCH}
 }
 
 
