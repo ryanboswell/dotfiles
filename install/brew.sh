@@ -35,6 +35,7 @@ apps=(
   hyper
   imagemagick
   jq
+  less
   mackup
   peco
   psgrep
