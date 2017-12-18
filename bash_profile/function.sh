@@ -14,6 +14,11 @@ function coverage() {
 function resetproject() {
   local BRANCH=${1-}
 
+  if [ ! -d ".git" ]; then
+    echo "Warning: This is not a git repository"
+    return 1
+  fi
+
   # Reset working copy to a clean state to prevent conflicts
   git clean -fdx
   git reset --hard
@@ -26,7 +31,6 @@ function resetproject() {
 
   git pull origin ${BRANCH}
 }
-
 
 # Clear out all local docker containers and caches
 dockerclean() {
