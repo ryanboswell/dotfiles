@@ -22,4 +22,4 @@ _install_external pwrline-js https://github.com/ryanboswell/pwrline-js
 # Package managers & packages
 . "$DOTFILES_DIR/install/brew.sh"
 . "$DOTFILES_DIR/install/npm.sh"
-. "$DOTFILES_DIR/install/atom.sh"
+# . "$DOTFILES_DIR/install/atom.sh" Disabled for now.
