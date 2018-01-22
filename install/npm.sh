@@ -1,13 +1,11 @@
 brew install nvm
 . "${DOTFILES_DIR}/system/.nvm"
-nvm install 6
+nvm install 8
 
 # Globally install with npm
-
 packages=(
   diff-so-fancy
   get-port-cli
-  grunt-cli
   nodemon
   release-it
   spot
