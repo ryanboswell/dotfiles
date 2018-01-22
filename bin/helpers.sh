@@ -15,5 +15,5 @@ function _source_bash_profile_components() {
 }
 
 function _update_ps1() {
-   export PS1="$($DOTFILES_DIR/external/powerline-js/powerline.js $? --shell bash --depth 2)"
+   export PS1="$($DOTFILES_DIR/external/pwrline-js/powerline.js $? --shell bash --depth 2)"
 }

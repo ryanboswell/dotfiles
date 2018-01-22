@@ -17,7 +17,7 @@ _symlink_dotfiles
 
 # External Dependencies
 _install_external fonts https://github.com/powerline/fonts
-_install_external powerline-js https://github.com/ryanboswell/powerline-js
+_install_external pwrline-js https://github.com/ryanboswell/pwrline-js
 
 # Package managers & packages
 . "$DOTFILES_DIR/install/brew.sh"
