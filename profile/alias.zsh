@@ -5,35 +5,19 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-
-## Vagrant
-alias vu='vagrant up'
-alias vd='vagrant destroy -f'
-alias vh='vagrant halt'
-alias vs='vagrant ssh'
-alias vstat='vagrant --global status'
-alias vr='vagrant reload'
-alias vrp='vagrant reload --provision'
-
-
-## NPM
-alias ni="npm install"
-alias nun="npm uninstall"
-alias nup="npm update"
-
-
-## Local dev helpers
+## Local shortcuts
+alias godot='cd ~/dotfiles'
 alias godev='cd ~/Documents/dev'
-alias sshkey='ssh-add -K'
-
+alias gotoolkit='cd ~/toolkit'
 
 ## Network
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-
+alias sshkey='ssh-add -K'
 
 # Application shortcuts
-alias sourcetree='open -a /Applications/SourceTree.app'
-
+# alias st='open -a /Applications/SourceTree.app'
+# alias gk='open -a /Applications/GitKraken.app'
+alias vscode="open -a '/Applications/Visual Studio Code.app'"
 
 # Start screen saver
 alias afk="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
